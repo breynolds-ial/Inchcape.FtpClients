@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Title>Inchcape FTP Clients</Title>
+    <Authors>Brian Reynolds</Authors>
+    <Version>1.0.0</Version>
+    <Company>Inchcape</Company>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WinSCP" Version="6.1.2" />
+  </ItemGroup>
+
+</Project>
