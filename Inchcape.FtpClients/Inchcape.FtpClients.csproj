@@ -6,13 +6,21 @@
     <Nullable>enable</Nullable>
     <Title>Inchcape FTP Clients</Title>
     <Authors>Brian Reynolds</Authors>
-    <Version>1.0.0</Version>
-    <Company>Inchcape</Company>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	<AssemblyVersion>1.1.1</AssemblyVersion>
+	<FileVersion>$(AssemblyVersion)</FileVersion>
+	<Version>$(AssemblyVersion)</Version>
+	<PackageVersion>$(AssemblyVersion)</PackageVersion>
+	<Company>Inchcape</Company>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.2" />
     <PackageReference Include="WinSCP" Version="6.1.2" />
   </ItemGroup>
+
+  <Target Name="PushToNuGet" AfterTargets="Pack">
+	<Exec Command="dotnet nuget push $(BaseOutputPath)$(Configuration)\$(PackageId).$(PackageVersion).nupkg --source Local" />
+  </Target>
 
 </Project>

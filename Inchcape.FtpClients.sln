@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inchcape.FtpClients", "Inchcape.FtpClients\Inchcape.FtpClients.csproj", "{3666D9FB-255A-42C5-AF9C-F3BCE85A654D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inchcape.FtpClients.Console", "Inchcape.FtpClients.Console\Inchcape.FtpClients.Console.csproj", "{14F710D0-194C-4C27-9E73-6C33758F3F90}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3666D9FB-255A-42C5-AF9C-F3BCE85A654D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3666D9FB-255A-42C5-AF9C-F3BCE85A654D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3666D9FB-255A-42C5-AF9C-F3BCE85A654D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14F710D0-194C-4C27-9E73-6C33758F3F90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14F710D0-194C-4C27-9E73-6C33758F3F90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14F710D0-194C-4C27-9E73-6C33758F3F90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14F710D0-194C-4C27-9E73-6C33758F3F90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
