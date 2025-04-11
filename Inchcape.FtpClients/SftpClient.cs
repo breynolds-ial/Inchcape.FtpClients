@@ -30,7 +30,7 @@ namespace Inchcape.FtpClients
 
             return sessionOptions;
         }
-        public void GetFiles(string fileSpecIncludingFolder, string destinationPath)
+        public void GetFiles(string fileSpecIncludingFolder, string destinationPath, bool removeAfterwards)
         {
             using (Session session = new Session())
             {
@@ -42,7 +42,7 @@ namespace Inchcape.FtpClients
                 transferOptions.TransferMode = TransferMode.Binary;
 
                 TransferOperationResult transferResult;
-                transferResult = session.GetFiles(fileSpecIncludingFolder, destinationPath, false, transferOptions);
+                transferResult = session.GetFiles(fileSpecIncludingFolder, destinationPath, removeAfterwards, transferOptions);
                 transferResult.Check();
             }
 
